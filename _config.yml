@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Dimensions
-email: your-email@domain.com
+email: javierbullrich@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -33,6 +33,9 @@ flickr:
   secret: 9b5af6951560488c
   user: 148889843@N07
   photoset: 72157679946334810
+
+collections:
+  section:
 
 # Build settings
 markdown: kramdown
