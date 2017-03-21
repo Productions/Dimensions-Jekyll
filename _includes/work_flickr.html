@@ -1,0 +1,32 @@
+<h2 class="major">Work</h2>
+<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/flickr/FlickrAPI.js"></script>
+<script src="assets/flickr/Flickr.Gallery.js"></script>
+<link rel="stylesheet" href="assets/flickr/gallery.css">
+
+<!-- gallery STRUCTURE -->
+  <div class="niceGallery" id="gallery">
+        <!-- HERE IS PLACE FOR PHOTOS -->
+  </div>
+  <!-- end gallery STRUCTURE --> 
+
+
+<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu.</p>
+
+    <script type="text/javascript">
+$(document).ready(function (){ 
+  $("#gallery").flickrGallery({
+    // OPTIONS
+    //FLICKR API KEY
+Key: '{{ site.flickr.key }}',
+//Secret
+Secret: '{{ site.flickr.secret }}',
+//FLICKR user ID
+    User: '{{ site.flickr.user }}',
+//Flickr PhotoSet ID
+    PhotoSet: '{{ site.flickr.photoset }}'
+  });
+}); 
+</script>
